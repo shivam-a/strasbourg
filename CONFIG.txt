@@ -1,0 +1,103 @@
+[input]
+survey = input/EMD/
+area_percentage = input/zone_to_iris/zone_iris_tabulate_intersection.csv
+deplacements_emd_activities = input/EMD/DEPLACEMENTS_EMD_activities.csv
+tabulate_intersection = input/zone_to_iris/zone_iris2019_tabulate_intersection.csv
+work_size = input/size_with_iris/work_with_iris.csv
+school_size = input/size_with_iris/school_with_iris.csv
+school19_size = input/size_with_iris/school19_with_iris.csv
+university_size = input/size_with_iris/uni_with_iris.csv
+university19_size = input/size_with_iris/uni19_with_iris.csv
+home_size = input/size_with_iris/home_with_iris.csv
+home_getaway_size = input/size_with_iris/home_getaway_with_iris.csv
+shopping19_size = input/size_with_iris/shopping19_with_iris.csv
+leisure19_size = input/size_with_iris/leisure19_with_iris.csv
+
+[Shapefile]
+bas_rhin_iris = input/shapefile/bas_rhin_iris/CONTOURS-IRIS_D067.shp
+bas_rhin_zone = input/shapefile/bas_rhin_zone/EMD_09_zone_fine.shp
+
+[DAP]
+ungrouped = output/DAP/DAP_ungrouped.csv
+datasets = output/DAP/
+
+[TOD]
+ungrouped = output/TOD/TOD_ungrouped.csv
+time_of_day = output/TOD/time_of_day.csv
+datasets = output/TOD/
+
+[LOA]
+ungrouped = output/LOA/LOA_ungrouped.csv
+location_of_activity = output/LOA/location_of_activity.csv
+datasets = output/LOA/
+
+
+[ANALYSIS]
+dummy = output/ANALYSIS/dummy/
+frequency = output/ANALYSIS/frequency/
+contingency = output/ANALYSIS/contingency/
+multicollinearity = output/ANALYSIS/multicollinearity/
+regression = output/ANALYSIS/regression/
+tod_analysis = output/ANALYSIS/tod_analysis/
+loa_analysis = output/ANALYSIS/loa_analysis/
+
+[GRAPHS]
+frequency = output/GRAPHS/frequency/
+contingency = output/GRAPHS/contingency/
+tod_analysis = output/GRAPHS/tod_analysis/
+loa_analysis = output/GRAPHS/loa_analysis/
+
+[ZoneIris]
+zone_to_iris = input/zone_to_iris/zone_to_iris.csv
+
+############
+# old data 2019
+############
+[inputfiles]
+population_file = input/pop.csv
+activityBehaviour_file = input/activityBehavior.csv
+# For entire France
+shp_file = input/shapefile/CONTOURS-IRIS/CONTOURS-IRIS.shp
+av_file = input/attraction_vector.csv
+tag_file = input/overpass_tags_weighted.csv
+ds_file = input/distance_matrix.csv
+census_file = input/census/base-ic-evol-struct-pop-2014.xls
+zone_iris_file = input/zi.csv
+survey folder = input/emd/
+starting times = input/Time/Startingtime_Probabilities.csv
+durations = input/Time/Duration_Probabilities.csv
+
+[dictionaries]
+omtl = input/omtl.pkl
+betas = input/betas.pkl
+trips = input/trips.pkl
+
+[basic information]
+area type = IRIS
+areas of interest = 670010000,670080000,670160000,670340000,670430201,670430104,670430203,670430101,670430103,670430204,670430202,670430102,670450000,670490000,670650000,670800000,670810000,670970000,671010000,671020000,671080000,671090000,671120000,671180101,671180102,671190000,671240000,671270000,671280000,671310000,671370000,671380000,671500000,671510000,671520102,671520101,671560000,671720000,671730000,671810000,671820000,671970000,672000000,672040105,672040102,672040104,672040103,672040101,672050000,672120000,672140000,672170000,672180203,672180301,672180102,672180103,672180104,672180101,672180303,672180201,672180302,672180202,672230000,672260000,672280000,672360000,672370000,672400000,672470000,672480000,672530000,672560000,672660000,672670302,672670201,672670203,672670102,672670101,672670202,672670301,672680000,672820000,672860000,672960000,673000103,673000101,673000104,673000102,673090102,673090101,673260000,673290000,673350000,673360000,673430000,673480104,673480105,673480102,673500000,673540000,673630000,673650104,673650102,673650103,673650105,673650101,673740000,673750000,673780000,673820000,673890000,674060000,674110000,674420000,674470102,674470401,674470302,674470203,674470202,674470301,674470101,674470501,674470502,674470201,674470402,674470103,674520000,674710102,674710101,674730000,674821701,674821302,674820202,674823003,674820802,674820303,674822703,674822902,674821502,674821001,674821901,674822901,674822601,674821004,674821206,674820801,674821102,674822702,674822105,674820301,674822303,674821403,674821604,674820302,674823002,674821501,674820401,674822204,674821405,674821101,674821205,674821606,674820204,674821704,674821203,674820903,674821904,674821705,674821301,674820305,674822406,674821603,674822106,674820602,674821902,674822402,674821002,674822104,674821103,674820402,674821702,674820304,674822404,674820203,674821804,674822002,674821401,674820803,674822202,674821903,674821207,674822503,674821601,674822403,674822801,674821605,674822205,674820804,674821706,674823001,674821402,674822804,674821802,674821005,674822203,674821805,674821905,674821303,674822302,674820702,674820502,674820501,674820201,674820102,674822802,674821503,674820101,674822201,674822502,674822407,674822301,674821202,674822001,674820503,674821801,674822103,674821803,674822401,674822304,674821104,674820901,674820701,674821703,674822602,674821204,674822501,674822305,674821201,674820902,674820601,674821404,674822206,674822102,674822405,674822101,674820603,674850000,674950000,675060101,675060102,675190101,675190102,675320000,675420000,675480000,675510000,675540000,675560000
+
+[attraction vector]
+#path of file for the attraction vector
+#if file exist, it will be used, otherwise the script "generate_attraction_vector.py" will be run (LONG RUNTIME)
+#in this case, choose one method (currently only basic available)
+method = france
+
+[for av_france]
+sirene = input/sirene/SIRENE_201001_d67_IRIS2019_fv.csv
+sirene_with_empl= input/sirene/SIRENE_201001_d67_IRIS2019_no_empl.csv
+sirene_with_customers =input/sirene/SIRENE_201001_d67_IRIS2019_working_shopping.csv
+naf_codes = input/sirene/_NAF_codes_commercial_areas.xlsx
+code_employees = input/sirene/_SIREN_trancheEffectifsUniteLegale_key.csv
+school = input/shapefile/schools_with_coord.shp
+uni = input/shapefile/unis_with_coord.shp
+leisure = input/BDTOPO/activite/SURFACE_ACTIVITE.SHP
+
+[distance matrix]
+#either "euclidean distance" or "open trip planner"
+method = open trip planner
+
+[gravity model]
+beta = 0.1
+
+[activity behaviour]
+method = emd

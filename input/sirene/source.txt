@@ -1,0 +1,99 @@
+https://www.sirene.fr/sirene/public/creation-fichier#tranche-effectif
+
+APEN700 : Activité principale de l'entreprise en 712 classes - the mian activity of the company
+TEFEN: the size of the company's workforce
+
+# Siren
+Nine-digit identifying number assigned by Insee to all natural persons or corporate bodies recorded in the register of enterprises and establishments
+# Sirene
+Computer system for the register of enterprises and their establishments from which Insee creates the Sirene® database
+
+# Siret
+The Siret number is a unique identification number attributed to each establishment by Insee. 
+It is simply a sequential number, made up of 14 non-significant digits:  the first nine digits correspond to the Siren number of the enterprise on which the establishment depends and the last five to an internal classification number (NIC).
+
+A enterprise is made up of as many establishments as there are different places where it carries out its activities. The establishment closes when activity ceases in the establishment concerned or when it has a change of address.
+
+#########################
+
+# Principal activity (APE)
+
+As part of its responsibility to maintain the Sirene register, Insee assigns a principal activity code (APE) for statistical purposes to the enterprise and to each of its establishments, based on the French Classification of Activities (NAF) as defined by decree.
+
+The APE is determined separately for: 
+- the enterprise as a whole and 
+- for each establishment (based on a breakdown of the enterprise's activities). 
+
+#########################
+
+#  Legal category
+
+The legal category describes the legal status of the enterprise. 
+For corporate bodies it is determined from the declaration completed when the enterprise is created. .
+
+In the Sirene® database, legal nature corresponds only to the legal category for corporate bodies.
+
+#########################
+
+# activitePrincipaleUniteLegale - MainUnitLegalActivity- Main activity of the legal unit
+
+At the time of its registration in the register, INSEE assigns to each legal unit a code called "APE" on the basis of the description of the main activity made by the declarant. This code can be modified during the life of the legal unit according to the declarations made by the operator.
+
+For each legal unit, there is at a given time only one "APE" code. It is assigned according to the nomenclature in force. The nomenclature in force is the Naf Rév2 and this since January 1st, 2008. Each code consists of 2 digits, a dot, 2 digits and a letter. All legal units active on 01/01/2008 have had their APE code recoded in the new nomenclature, so many companies have a period starting on this date.
+At the time of the company's declaration, it may happen that Insee is not able to assign the right APE code: the 00.00Z modality can then be provisionally assigned.
+
+#########################
+
+# activitePrincipaleEtablissement- main activityEstablishment
+
+The nomenclature variableActivityMainActivityEtablishment indicates to which activity nomenclature the code belongs.
+
+########################
+codePostalEtablissement- Postal codes
+France uses five-digit numeric postal codes, the first two digits representing the département in which the city is located
+
+########################
+- TEFET, # Employee share of the establishment -Tranche d'effectif salarié de l'établissement
+- LIBTEFET #  Name of the establishment's salaried workforce
+
+- TEFEN, # Employee share of the company - Tranche d'effectif salarié de l'entreprise
+- LIBTEFEN, # Wording of the company's salaried workforce
+
+trancheEffectifsUniteLegale -Portion of the legal unit's salaried workforce
+
+trancheEffectifsEtablissement -Portion of the establishment's salaried workforce
+List of codes
+
+NN: Non-employer establishment (no employees during the reference year and no staff as of 12/31)
+
+00 : 0 employee (no employees as of 12/31 but having employed employees during the reference year)
+
+01 : 1 or 2 employees
+
+02 : 3 to 5 employees
+
+03 : 6 to 9 employees
+
+11 : 10 to 19 employees
+
+12 : 20 to 49 employees
+
+21 : 50 to 99 employees
+
+22 : 100 to 199 employees
+
+31: 200 to 249 employees
+
+32: 250 to 499 employees
+
+41 : 500 to 999 employees
+
+42: 1,000 to 1,999 employees
+
+51: 2,000 to 4,999 employees
+
+52: 5,000 to 9,999 employees
+
+53: 10,000 employees and more
+
+Translated with www.DeepL.com/Translator (free version)
